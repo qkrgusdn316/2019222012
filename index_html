@@ -1,1 +1,28 @@
-1 hello world 2019222012 박현우 ??
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <tittle>HTML Design</tittle>
+        <meta Charset="utf-8" />
+        <!— utf-8, euc-kr —>
+        <meta name="author" content="진송우" />
+    </head>
+    <br />
+    <body>
+        <a href="training_hd.html">1주차 HTML연습</a><br />
+    
+        <a href="html_part1_hd.html">2주차 자유주제</a>
+
+                <!—storng, em <>b, i —>
+                <storng>강한 강조</storng>
+                <em>강조</em>
+        
+                <b>볼드체</b>
+                <i>이텔릭체</i>
+
+                <!— ins 첨부하다, del 삭제하다, u 밑줄, strike 가운데줄—>
+                <ins>추가하고 싶은 정보</ins>
+                <del>쓸모없는 정보나 관계없는 정보</del>
+                
+                <u>밑줄 형태</u>
+                <strike>가운데줄 형태</strike>
+</html>
