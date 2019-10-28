@@ -9,6 +9,9 @@
                 /*border: solid 1px black;*/
                /* margin: 5px;*/
             }
+            header{
+                padding: 20px 70px; /* 상하 좌우 */
+            }
             header>ul>li{
                 float:left; /* 둥둥떠다님 : 왼쪽기준; */
             list-style: none; /* 목록모양(왼쪽동그라미): 없음 */
@@ -38,6 +41,7 @@
             }
             nav{
                 background-color: #eee;
+                padding: 20px 70px;
             }
             nav>ul{
                 padding: 0px;
@@ -67,9 +71,72 @@
             div>section:nth-child(4){
                 background-color: #ec5;
             }
+            div>section>div{
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+                /*가운데 정렬 */
+            }
+            section{
+                padding: 50px 0px; /* 상하 좌우 */
+            }
             .content_part{
                 width: 480px;
+                float: left; /* 둥둥 떠다니도록 " 왼쪽기준*/
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin: 5px 10px; /*상하 좌우 */
             }
+            div>section>div>h3{
+                color: white;
+            }
+            dt{
+                margin: 10px 0px; /* 상하 좌우 */
+                font-weight: bold;
+            }
+            dd{
+                margin: 0px;
+            }
+            footer{
+                background-color: #333;
+                color: #aaa; /*글자 색깔 , 상속됨 */
+                padding: 20px 70px;
+            }
+            #navi_ul{
+                padding: 0px;
+            }
+            #navi_ul>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px; /*상하 좌우 */
+                border-right: solid 2px #aaa; /* 경계선 */
+
+            }
+            #navi_ul>li:nth-child(6){
+                border: none;
+            }
+            #icon_ul{
+                padding: 0px;
+            }
+            #icon_ul>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px; /*상하 좌우 */
+             }
+             #fotter_left{
+                 float: left;
+             }
+             #icon_ul{
+                 float: right;
+             }
+             #wrap{
+                 min-width: 1000px; /* 최소 가로 사이즈 : 1000px */
+                 max-width: 1920px; /* 최대 가로 사이즈 : 1920px */
+                 /* 104*768, 1920*1000(FHD) */
+                 margin: 0px auto; /*상하 0px, 좌우 자동 */
+             }
         
             </style>
     </head>
@@ -106,6 +173,7 @@
  </nav>
     <div>
         <section>
+            <div>
             <h3>Web Design</h3>
             <div class="content_part">
                 <img src="images/layout1_img1.jpg"/>
@@ -114,7 +182,7 @@
                         제목제목제목
                     </dt>
                     <dd>
-                        내용내용내용
+                            내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
                     </dd>
                 </dl>
             </div>
@@ -129,8 +197,12 @@
                     </dd>
                 </dl>
             </div>
+            <div class="clear"></div>
+        </div>
         </section>
+
         <section>
+            <div>
                 <h3>Icons</h3>
                 <div class="content_part">
                     <img src="images/layout1_img3.jpg"/>
@@ -154,8 +226,11 @@
                         </dd>
                     </dl>
                 </div>
+                <div class="clear"></div>
+            </div>
             </section>
             <section>
+                <div>
                     <h3>illustrations</h3>
                     <div class="content_part">
                         <img src="images/layout1_img5.jpg"/>
@@ -179,8 +254,11 @@
                             </dd>
                         </dl>
                     </div>
+                    <div class="clear"></div>
+                </div>
                 </section>
                 <section>
+                    <div>
                         <h3>Miscellaneous</h3>
                         <div class="content_part">
                             <img src="images/layout1_img7.jpg"/>
@@ -204,32 +282,39 @@
                                 </dd>
                             </dl>
                         </div>
+                        <div class="clear"></div>
+                    </div>
                     </section>
         
 
     </div>
     <footer>
-        <ul>
+        <div id="fotter_left">
+        <ul id="navi_ul">
             <li>Home</li>
             <li>About</li>
             <li>Services</li>
             <li>Work</li>
             <li>Blog</li>
             <li>Contact us</li>
+            <div class="clear"></div>
             
         </ul>
         <p>ⓒ 2013 BlueBox. All Right Reserved</p>
         <p>the loges in the design are the property of their
              respective owners/copyright holders.
             </p>
-            <ul>
+        </div>
+            <ul id="icon_ul">
                 <li><img src="images/layout1_footer_icon1.png"/></li>
                 <li><img src="images/layout1_footer_icon2.png"/></li>
                 <li><img src="images/layout1_footer_icon3.png"/></li>
                 <li><img src="images/layout1_footer_icon4.png"/></li>
                 <li><img src="images/layout1_footer_icon5.png"/></li>
                 <li><img src="images/layout1_footer_icon6.png"/></li>
-            </ul>
+                <div class="clear"></div>
+             </ul>
+             <div class="clear"></div>
     </footer>
 </div>  
 </body>
